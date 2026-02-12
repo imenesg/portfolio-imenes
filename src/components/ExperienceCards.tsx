@@ -1,6 +1,15 @@
 import codebitLogo from '../../public/codebit_logo.jpg'
 
-const experiencesMock = [
+export interface Experience {
+    company: string;
+    start: string;
+    end: string;
+    position: string;
+    description: string;
+    logo: string;
+}
+
+const experiencesMock: Experience[] = [
     {
         company: "(ꓭ/ CodeBit - Programando Soluções",
         start: "10/22",
@@ -31,11 +40,12 @@ const experiencesMock = [
         start: "04/25",
         end: "04/atual",
         position: "Desenvolvedor nível III",
-        description: "Atuei na criação e manutenção de sites, realizando melhorias de performance e implementando novos fluxos de administração nas plataformas. Trabalhei no monitoramento de erros com Sentry, analisando falhas e apoiando a correção de problemas em produção. Prestei suporte técnico direto aos usuários do sistema, identificando, reproduzindo e corrigindo bugs, sempre aplicando boas práticas de desenvolvimento e qualidade de código.",logo: codebitLogo,
+        description: "Atuei na criação e manutenção de sites, realizando melhorias de performance e implementando novos fluxos de administração nas plataformas. Trabalhei no monitoramento de erros com Sentry, analisando falhas e apoiando a correção de problemas em produção. Prestei suporte técnico direto aos usuários do sistema, identificando, reproduzindo e corrigindo bugs, sempre aplicando boas práticas de desenvolvimento e qualidade de código.",
+        logo: codebitLogo,
     },
 ];
 
-function ExperienceCard({item}) {
+function ExperienceCard({item}: { item: Experience }) {
     return (
         <div
             className="group relative rounded-2xl border border-zinc-800 bg-zinc-900/60 p-6 backdrop-blur transition hover:border-zinc-600 hover:bg-zinc-900 container">

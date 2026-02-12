@@ -3,7 +3,13 @@ import perfilPrint from '../../public/perfil.png'
 import idrcPrint from '../../public/idrc.png'
 import gestaoPrint from '../../public/gestao.png'
 
-const projectsMock = [
+export interface Project {
+    title: string,
+    image: string,
+    url: string,
+}
+
+const projectsMock: Project[] = [
     {
         title: "Home",
         image:
@@ -22,9 +28,15 @@ const projectsMock = [
         gestaoPrint,
         url: "https://www.youtube.com/watch?v=9fQoAh1T-DQ",
     },
+    {
+        title: "IdRC",
+        image:
+        idrcPrint,
+        url: "https://www.youtube.com/watch?v=9fQoAh1T-DQ",
+    },
 ];
 
-function ProjectCard({project}) {
+function ProjectCard({project}: { project: Project }) {
     return (
         <a
             href={project.url}

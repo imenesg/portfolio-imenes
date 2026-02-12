@@ -1,4 +1,3 @@
-import selfie from '../../public/selfie.png'
 
 export default function Hero() {
     return (
