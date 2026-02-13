@@ -17,13 +17,13 @@ const projectsMock: Project[] = [
         url: "https://home.registrocivil.org.br",
     },
     {
-        title: "Pefil - cidadão",
+        title: "Perfil - cidadão",
         image:
         perfilPrint,
         url: "https://perfil.idrc.org.br",
     },
     {
-        title: "Pefil - Gestão",
+        title: "Perfil - Gestão",
         image:
         gestaoPrint,
         url: "https://www.youtube.com/watch?v=9fQoAh1T-DQ",
@@ -32,7 +32,7 @@ const projectsMock: Project[] = [
         title: "IdRC",
         image:
         idrcPrint,
-        url: "https://www.youtube.com/watch?v=9fQoAh1T-DQ",
+        url: "https://www.youtube.com/watch?v=f1rJsHU031U",
     },
 ];
 
