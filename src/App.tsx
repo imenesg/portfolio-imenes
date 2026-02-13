@@ -1,7 +1,7 @@
-import Hero from '../src/components/hero.tsx'
+import Hero from './components/Hero'
 import ExperienceList from "./components/ExperienceCards";
 import ProjectCards from "./components/ProjectsCards";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 
 function App() {
 
